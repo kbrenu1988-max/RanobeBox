@@ -1,69 +1,118 @@
-<html>
-    <head>
-        <title>RanobeBox</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="QGK42pllEWmowb9lw-1Qb2uiFl3fyID3_w8yqkmFMDg" />
+    <title>RanobeBox</title>
+    <style>
+        
+        body {
+            
+            background-color: #fdf8fc;
+            color: #2b2329;            
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
 
-        <meta name="google-site-verification" content="QGK42pllEWmowb9lw-1Qb2uiFl3fyID3_w8yqkmFMDg" />
-        <style>
+    
+        header {
+            background: linear-gradient(135deg, #8a0f8a, #410441); 
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
 
-            body {
-                background-color: #fde6fb;
-            }
+        .header-container {
+            max-width: 800px;
+            margin: 0;
+        }
 
-            .top-bar {
-                position: absolute;
-                top: 0;
-                right: 0;
-                left: 0;
-                color: white;
-                padding: 14px 20px;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                font-size: 25px;
-                background-image: linear-gradient(to right, #ae18be, black);
-            }
+        .main-content {
+            max-width: 800px;
+            margin-left: 5px;
+            margin-top: 40px;
+            padding: 0 20px;
+        }
 
-            ul > li {
-                position: fixed;
-                top: 300px;
-                list-style: none;
-                font-size: 30px;
-                padding: 10px 20px;
-                text-align: center;
-                background-color: #f9bfff;
-                border-radius: 9px;
-                border: solid #ae18be;
-                left: 10px;
-            }
+        .intro-box {
+            background-color: white;
+            padding: 25px;
+            border-radius: 2px;
+            box-shadow: 0 4px 15px rgba(138, 15, 138, 0.05);
+            border-left: 5px solid #8a0f8a;
+            margin-bottom: 40px;
+            font-size: 17px;
+        }
 
-            p {
-                font-size: 25px;
-                top: 50px;
-                color: black;
-                position: fixed;
-            }
+        h2 {
+            color: #8a0f8a;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
 
-            h1 {
-                position: fixed;
-                top: 200px;
-                color: #ae18be;
-            }
-        </style>
-    </head>
+        .story-button {
+            display: inline-block;
+            background-color: #8a0f8a;
+            color: white;
+            text-decoration: none;
+            padding: 14px 28px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(138, 15, 138, 0.2);
+            transition: transform 0.2s, background-color 0.2s;
+        }
 
-    <body>
+        .story-button:hover {
+            background-color: #a61ca6;
+            transform: translateY(-2px);
+        }
 
-        <div class="top-bar">RanobeBox</div>
+        .comment-section {
+            margin-top: 60px;
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
 
-        <p>Hi! this is your Kage2014 and I am gonna to keep my identity a mystery. I think you'll
-            love my stories, which are not official novels but novels written by me. So don't go to YouTube 
-            or any novel reading platforms searching for my self written novels. I hope you enjoy it. I'll 
-            come with new chapters and stories whenever I get time.
-        </p>
+    <header>
+        <div class="header-container">RanobeBox</div>
+    </header>
 
-        <h1>Here are some stories</h1>
+    <div class="main-content">
+        
+        <div class="intro-box">
+            Hi! This is your Kage14 and I am gonna to keep my identity a mystery. I think you'll love my stories, which are not official novels but novels written by me. So don't go to YouTube or any novel reading platforms searching for my self written novels. I hope you enjoy it. I'll come with new chapters and stories whenever I get time.
+        </div>
 
-        <ul>
-            <li>Yukina Chronicles</li>
-        </ul>
+        <h2>Here are some stories</h2>
 
-    </body>
+        <a href="yukina-chapters.html" class="story-button">Yukina Chronicles</a>
+
+        <div class="comment-section">
+            <h2>Leave a Message / Feedback</h2>
+            
+            <!-- Safe, free comment engine using your GitHub account -->
+            <script src="https://utteranc.es/client.js"
+            repo="[RanobeBox]"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+            </script>
+            </script>
+        </div>
+
+    </div>
+
+</body>
 </html>
