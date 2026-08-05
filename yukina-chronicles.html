@@ -11,24 +11,29 @@
             background-color: rgb(239, 255, 255);
             color: #025683;
             line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
          }
 
          p {
             color: rgb(0, 154, 192);
             font-size: 20px;
+            margin-bottom: 20px;
             line-height: 1.6;
          }
 
          a {
             display: inline block;
-            padding: 10px;
-            font-size: 20px;
+            padding: 14px 28px;
             background-color: rgb(69, 170, 252);
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 18px;
             border-radius: 8px;
-            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 4px 6px rgb(29, 48, 63);
+            transition: transform 0.2s, background-color 0.2s; 
          }
 
          a:hover {
@@ -38,6 +43,9 @@
 
          .main-content {
             max-width: 800px;
+            margin-left: 5px;
+            margin-top: 40px;
+            padding: 0 20px;
          }
 
          h4 {
@@ -55,6 +63,18 @@
          .synopsis {
             color: rgb(0, 112, 139);;
          }
+
+         @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212;
+                color: #ffffff;
+            }
+            
+            a {
+                color: white;
+            }
+
+         }
     </style>
     <body>
 
@@ -68,8 +88,8 @@
         <h4>Fantasy | Romance | Political Drama | Magic | Sibling Drama</h4>
 
         <h3 class="synopsis">Synopsis</h3>
-        <p>Yukina Elarion, the daughter of Duke Elarion, feared and avoided because of her noble status and extraodinary ice magic.
-            Her older brother, Mizuki, is fiercely overprotective, while her younger brother, Kazuma, is her complete opposite-always
+        <p>Yukina Elarion, the daughter of Duke Elarion, feared and avoided because of her noble status and extraordinary ice magic.
+            Her older brother, Mizuki, is fiercely overprotective, while her younger brother, Kazuma, is her complete oppositen - always
              cheerful and able to bring life back into the quiet Duke's mansion.
         </p>
         <br><br>
