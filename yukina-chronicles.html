@@ -23,7 +23,12 @@
             line-height: 1.6;
          }
 
-         a {
+         .home-link {
+            text-decoration: none;
+            color: inherit;
+         }
+
+         .start-read {
             display: inline block;
             padding: 14px 28px;
             background-color: rgb(69, 170, 252);
@@ -36,7 +41,7 @@
             transition: transform 0.2s, background-color 0.2s; 
          }
 
-         a:hover {
+         .start-read:hover {
             background-color: rgb(139, 200, 250);
             transform: translateY(-2px);
          }
@@ -84,11 +89,12 @@
             }
 
          }
+
     </style>
     <body>
 
         <header>
-            <div class="header-container">RanobeBox</div>
+            <div class="header-container"><a href="index.html" class="home-link">RanobeBox</a></div>
         </header>
 
         <div class="main-content">
@@ -107,8 +113,9 @@
         </p>
         <br><br>
 
-        <a href="yukina chapter-1.html" class="volume-button">Start Reading</a>
+        <a class="start-read" href="yukina chapter-1.html" class="volume-button">Start Reading</a>
 
         </div>
+
     </body>
 </html>
