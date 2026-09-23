@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title>Chapter 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Yukina Chronicles Chapter 1, Chapter 1, Yukina Chronicles Volume 1, Yukina Chronicles">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        
+        <style>
+
+            body {
+                background-color: #fdf8fc;
+                color: #2b2329;            
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 0;
+                line-height: 1.6;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            .main-content {
+                margin-left: 5px;
+                margin-top: 30px;
+                padding: 0 20px;
+            }
+
+            header {
+            background: linear-gradient(135deg, #8a0f8a, #410441); 
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            }
+
+            h2 {
+                text-align: center;
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+            p {
+                line-height: 1.6;
+                max-width: max-content;
+                font-size: 20px;
+            }
+
+            .home-link {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            #chapter-menu {
+                position: fixed;
+                top: 95px;
+                right: 15px;
+                border-radius: 8px;
+                opacity: 0;
+                visibility: hidden;
+                z-index: 10000;
+                padding: 8px 12px;
+                transition: opacity 0.2s ease, visibility 0.2s ease;
+                pointer-events: none;
+            }
+
+            #chapter-menu.show-menu {
+                opacity: 1;
+                visibility: visible;
+                pointer-events: auto;
+            }
+
+            center {
+                margin-top: 250;
+                font-size: 25px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <center><i>New Chapter will arrive in two days</i></center>
+    </body>
+
+    <select id="chapter-menu" onchange="goToPage(this)">
+                <option value="yukina chapter-1.html" selected disabled>Select a Chapter</option>
+                <option value="yukina chapter-2.html">Chapter 2</option>
+            </select>
+
+        </div>
+
+            <script>
+            const menu = document.getElementById("chapter-menu");
+            document.addEventListener("dblclick", function(event) {
+
+                if (event.target === menu) return;
+                menu.classList.toggle("show-menu");});
+
+            function goToPage(dropdown) {
+                    const targetpage = dropdown.value;
+
+                if (targetpage){
+                    dropdown.value = "";
+                    menu.classList.remove("show-menu");
+                    window.location.href = targetpage;
+                }
+
+                }
+
+            </script>
+    </body>
+</html>

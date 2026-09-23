@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <title>Chapter 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Yukina Chronicles Chapter 1, Chapter 1, Yukina Chronicles Volume 1, Yukina Chronicles">
+
+        <style>
+
+            body {
+                background-color: #fdf8fc;
+                color: #2b2329;            
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 0;
+                line-height: 1.6;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            .main-content {
+                margin-left: 5px;
+                margin-top: 30px;
+                padding: 0 20px;
+            }
+
+            header {
+            background: linear-gradient(135deg, #8a0f8a, #410441); 
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            }
+
+            h2 {
+                text-align: center;
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+            p {
+                line-height: 1.6;
+                max-width: max-content;
+                font-size: 20px;
+            }
+
+            .home-link {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            #chapter-menu {
+                position: fixed;
+                top: 95px;
+                right: 15px;
+                border-radius: 8px;
+                opacity: 0;
+                visibility: hidden;
+                z-index: 10000;
+                padding: 8px 12px;
+                transition: opacity 0.2s ease, visibility 0.2s ease;
+                pointer-events: none;
+            }
+
+            #chapter-menu.show-menu {
+                opacity: 1;
+                visibility: visible;
+                pointer-events: auto;
+            }
+
+            center {
+                font-size: 25px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="header-container"><a href="index.html" class="home-link">RanobeBox</a></div>
+        </header>
+
+        <div class="main-content">
+
+            <h1>Overpowered Yukina</h1>
+            <h2>Chapter 1</h2>
+            <h3>Beginning of Ice in the Imperial Academy</h3>
+
+            <p>The quiet mansion's ice duchess gets ready as the sun rises for a new beginning. <i>Yukina Elarion</i>, daughter of Grand Duke Elarion, 
+                rumoured as the ice duchess with the heart of ice, enrolls in the <i>Imperial Academy</i>.</p> <br>
+                <p>"Got ready for your first day?"</p><p> a voice from behind interrogates, <i>Mizuki Elarion</i>,
+                 known for his water magic, he is the eldest son of the Elarion household and the elder brother of Yukina. Yukina remaining
+                emotionless as ever, replies</p> <p>"Is the carriage ready?".</p><p> All he could do was stand hopelessly seeing his sister's
+                 reactionless face. As she prepares to leave, a cheerful voice shouted</p><p>"Make sure to make friends. Okay?"</p><p> the cheerful voice
+                was none other than Kazuma Elarion, the second eldsest child of the house and the second elder brother of Yukina. The brothers exchanged
+                eye contacts both wanting their sister to have a best life in their own ways.</p><br>
+                <p> Throughout the ride Yukina remains quiet as her thoughts drift back to her childhood when she was always avoided and feared 
+                because of her high noble status, her looks and rare ice magic now wonders how her life in the academy would be. Her thoughts 
+                come to an end when the carriage arrives at the academy. The chattering of the students stops and whispers began to spread as
+                Yukina enters the Academy.</p><p>"Isn't she the daughter of The Grand Duke Elarion?".</p><p>"Isn't she the rumoured ice duchess?".</p> <p>"Is she already fourteen?".</p>
+                <p>whispers like this spread among the students as Yukina walked down the hallway completely unbothered.</p><p>"I have expected this to happen cause 
+                this is what I always got whenever I enter a place full of nobles"</p><p> thought Yukina as her brothers guided her towards the 
+                Entrance Ceremony.</p><p>"So that's Yukina Elarion. She seems so different from the rumours"</p> <p>a voice filled with a warm aura echoed quietly in the ballcony
+                that merely no one noticed.</p>
+                <br><br><center><p><i>To Be Countinued...</i></p></center>
+
+            <select id="chapter-menu" onchange="goToPage(this)">
+                <option value="yukina chapter-1.html" selected disabled>Select a Chapter</option>
+                <option value="yukina chapter-2.html">Chapter 2</option>
+            </select>
+
+        </div>
+
+            <script>
+            const menu = document.getElementById("chapter-menu");
+            document.addEventListener("dblclick", function(event) {
+
+                if (event.target === menu) return;
+                menu.classList.toggle("show-menu");});
+
+            function goToPage(dropdown) {
+                    const targetpage = dropdown.value;
+
+                if (targetpage){
+                    dropdown.value = "";
+                    menu.classList.remove("show-menu");
+                    window.location.href = targetpage;
+                }
+
+                }
+
+            </script>
+    </body>
+</html>
